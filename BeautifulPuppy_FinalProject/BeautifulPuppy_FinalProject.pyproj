@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>10026f18-981b-4979-9579-f886be8e237f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BeautifulPuppy_FinalProject.py</StartupFile>
+    <StartupFile>mainPackage\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,29 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BeautifulPuppy_FinalProject.py" />
+    <Compile Include="data\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationPackage\location.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="locationPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\main.py" />
+    <Compile Include="mainPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="locationPackage\" />
+    <Folder Include="mainPackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\EncryptedGroupHints Fall 2024 Section 001.json" />
+    <Content Include="data\TeamsAndEncryptedMessagesForDistribution.json" />
+    <Content Include="data\UCEnglish.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
