@@ -1,3 +1,5 @@
+import json
+from cryptography.fernet import Fernet
 def decrypt_location(indices, words_file):
     """
     Decrypt the location using indices and the UCEnglish.txt file.
@@ -32,10 +34,42 @@ def decrypt_location(indices, words_file):
         return f"An unexpected error occurred: {e}"
 
 
+def decrypt_movie_title(encrypted_file, key):
+    """
+    Decrypt the movie title using the Fernet encryption method.
+    
+    :param encrypted_file: Path to the file containing the encrypted message.
+    :param key: The decryption key provided (Fernet format).
+    :return: The decrypted movie title.
+    """
+    try:
+        # Load the encrypted movie title (Assuming it's in JSON format)
+        with open(encrypted_file, 'r') as file:
+            encrypted_data = json.load(file)
+        
+        # Example: Assuming the movie title is stored under the key 'encrypted_movie'
+        encrypted_message = encrypted_data.get('encrypted_movie')
+        if not encrypted_message:
+            return "Error: Movie title not found in the file."
+
+        # Initialize the Fernet object with the provided key
+        fernet = Fernet(key)
+        
+        # Decrypt the message
+        decrypted_message = fernet.decrypt(encrypted_message.encode()).decode()
+
+        return decrypted_message
+    except FileNotFoundError as e:
+        return f"Error: File not found - {e}"
+    except json.JSONDecodeError as e:
+        return f"Error: JSON decoding error - {e}"
+    except Exception as e:
+        return f"Error: {e}"
+
 # Example usage
 if __name__ == "__main__":
-    # File path
-    words_file = 'data/UCEnglish.txt'
+    # File path for location decryption
+    words_file = 'data/UCEnglish.txt'  # Path to UCEnglish.txt
     
     # Indices for "BeautifulPuppy"
     indices = ["30942", "46342", "42061", "103568", "5040", "41700", "31066"]
@@ -43,3 +77,11 @@ if __name__ == "__main__":
     # Decrypt the location
     decrypted_location = decrypt_location(indices, words_file)
     print(f"Decrypted Location: {decrypted_location}")
+    
+    # File path for encrypted movie title
+    encrypted_file = 'data/TeamsAndEncryptedMessagesForDistribution.json'  # Path to the encrypted movie file
+    decryption_key = 'your-fernet-key-here'  # Replace with the actual Fernet key
+    
+    # Decrypt the movie title
+    movie_title = decrypt_movie_title(encrypted_file, decryption_key)
+    print(f"Decrypted Movie Title: {movie_title}")

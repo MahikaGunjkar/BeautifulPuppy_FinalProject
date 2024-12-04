@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>BeautifulPuppy_FinalProject</Name>
     <RootNamespace>BeautifulPuppy_FinalProject</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.12</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,9 @@
     <Content Include="data\EncryptedGroupHints Fall 2024 Section 001.json" />
     <Content Include="data\TeamsAndEncryptedMessagesForDistribution.json" />
     <Content Include="data\UCEnglish.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.12" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
