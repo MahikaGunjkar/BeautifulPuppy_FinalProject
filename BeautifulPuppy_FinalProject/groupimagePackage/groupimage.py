@@ -1,6 +1,6 @@
 # Name: Mahika Gunjkar, Nandini Agarwal, Ishani Roy Choudhary, Cheikh Abdoul
 # email:  gunjkamg@mail.uc.edu, agarwand@mail.uc.edu, roychoii@mail.uc.edu, abdoulch@mail.uc.edu
-# Assignment Number: Final Assignment
+# Assignment Number: Final Project
 # Due Date:  12/10/2024
 # Course #/Section:  IS 4010- 001
 # Semester/Year:   Fall 2024
@@ -9,7 +9,7 @@
 # Brief Description of what this module does. This module groupimage.py handles the display of an image file. 
                                                 # It uses the Pillow (PIL) library to open and display the image. 
                                                # If the image file is missing or an error occurs, the module provides an appropriate error message.
-# Citations:
+# Citations: used chatgpt for a few functions
 # Anything else that's relevant:
 
 # Image.py

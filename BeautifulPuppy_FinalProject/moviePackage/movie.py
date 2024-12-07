@@ -1,13 +1,13 @@
 # Name: Mahika Gunjkar, Nandini Agarwal, Ishani Roy Chowdhury, Cheikh Abdoul
 # email:  gunjkamg@mail.uc.edu, agarwand@mail.uc.edu, roychoii@mail.uc.edu, abdoulch@mail.uc.edu
-# Assignment Number: Final Assignment
+# Assignment Number: Final Project
 # Due Date:  12/10/2024
 # Course #/Section:  IS 4010- 001
 # Semester/Year:   Fall 2024
 # Brief Description of the assignment:  We worked on extracting and ecoding our image location and movie through decrypted json files. We also used PIL to add images to our python file
 
 # Brief Description of what this module does. In the movie.py file, we are decrypting the movie title for our team using the team key, data file, and decryption key.
-# Citations:
+# Citations: used chatgpt for a few functions
 # Anything else that's relevant:
 
 # movie.py
