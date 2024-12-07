@@ -1,4 +1,4 @@
-# Name: Mahika Gunjkar, Nandini Agarwal, Ishani Roy Choudhary, Cheikh Abdoul
+# Name: Mahika Gunjkar, Nandini Agarwal, Ishani Roy Chowdhury, Cheikh Abdoul
 # email:  gunjkamg@mail.uc.edu, agarwand@mail.uc.edu, roychoii@mail.uc.edu, abdoulch@mail.uc.edu
 # Assignment Number: Final Assignment
 # Due Date:  12/10/2024
