@@ -31,9 +31,6 @@
     <Compile Include="groupimagePackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ImagePackage\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="locationPackage\location.py">
       <SubType>Code</SubType>
     </Compile>
@@ -52,13 +49,13 @@
   <ItemGroup>
     <Folder Include="data\" />
     <Folder Include="groupimagePackage\" />
-    <Folder Include="ImagePackage\" />
     <Folder Include="locationPackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="moviePackage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\EncryptedGroupHints Fall 2024 Section 001.json" />
+    <Content Include="data\group_image.jpg" />
     <Content Include="data\TeamsAndEncryptedMessagesForDistribution.json" />
     <Content Include="data\UCEnglish.txt" />
   </ItemGroup>

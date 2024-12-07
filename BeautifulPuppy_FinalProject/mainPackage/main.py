@@ -1,16 +1,29 @@
+# Name: Mahika Gunjkar, Nandini Agarwal, Ishani Roy Choudhary, Cheikh Abdoul
+# email:  gunjkamg@mail.uc.edu, agarwand@mail.uc.edu, roychoii@mail.uc.edu, abdoulch@mail.uc.edu
+# Assignment Number: Final Assignment
+# Due Date:  12/10/2024
+# Course #/Section:  IS 4010- 001
+# Semester/Year:   Fall 2024
+# Brief Description of the assignment:  We worked on extracting and ecoding our image location and movie through decrypted json files. We also used PIL to add images to our python file
+
+# Brief Description of what this module does. This is the main.py file, it extracts the correct data from the all the other files and helps to run it.It also has all the description keys 
+# Citations:
+# Anything else that's relevant:
+
+
 #main.py
 import json
 from locationPackage.location import *
 from moviePackage.movie import *
-from display_photo.photo import display_photo
+from groupimagePackage import display_photo
 
 if __name__ == "__main__":
     # Files and inputs
-    location_file = "data/EncryptedGroupHints.json"
+    location_file = "data/EncryptedGroupHints Fall 2024 Section 001.json"
     words_file = "data/UCEnglish.txt"
     movie_file = "data/TeamsAndEncryptedMessagesForDistribution.json"
-    photo_path = "photo/group_photo.jpg"
-    decryption_key = ""  # Replace with actual key
+    photo_path = "data/group_image.jpg"
+    decryption_key = ""
     team_key = "BeautifulPuppy"
 
     # Decrypt location
