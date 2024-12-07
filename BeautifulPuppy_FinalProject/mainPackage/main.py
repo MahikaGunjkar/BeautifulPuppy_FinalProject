@@ -1,7 +1,7 @@
 #main.py
 import json
-from decrypt_location.location import decrypt_location
-from decrypt_movie.movie import decrypt_movie_title
+from locationPackage.location import *
+from moviePackage.movie import *
 from display_photo.photo import display_photo
 
 if __name__ == "__main__":
