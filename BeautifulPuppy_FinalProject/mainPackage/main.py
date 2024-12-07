@@ -15,7 +15,7 @@
 import json
 from locationPackage.location import *
 from moviePackage.movie import *
-from groupimagePackage import display_photo
+from groupimagePackage.groupimage import display_photo
 
 if __name__ == "__main__":
     # Files and inputs
